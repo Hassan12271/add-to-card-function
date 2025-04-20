@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gun Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>⚔️ Gun Shop</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Guns</a>
+      <a href="#">Contact</a>
+      <a id="item-count">0</a>
+      <a id="total-price">0</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Buy Premium Guns Online</h2>
+    <p>Top quality weapons, secure purchase, fast delivery!</p>
+  </section>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="./images.jpeg" alt="Gun 1" />
+      <h3>AK-47</h3>
+      <p>$800</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="./images (1).jpeg" alt="Gun 2" />
+      <h3>Desert Eagle</h3>
+      <p>$1200</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="./M16 Rifle.webp" alt="Gun 3" />
+      <h3>M16 Rifle</h3>
+      <p>$950</p>
+      <button onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gun Store. All rights reserved.</p>
+  </footer>
+</body>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: #444;
+  color: white;
+  padding: 3rem;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e74c3c;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+</style>
+<script src="app.js"></script>
+</html>
+
