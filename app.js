@@ -40,7 +40,6 @@ function fillArry() {
     ) {
       found = true;
       cart[i].productQuantity += 1;
-      cart[i].productPRice += cart[i].productPRice;
       break;
     }
   }
