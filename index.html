@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gun Store</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
+  <aside class="side-bar-menu">
+    <section>
+      <span class="close" onclick="closebtn()">X</span>
+      <div class="cart-continer">
+        
+      </div>
+    </section>
+  </aside>
   <header>
     <h1>⚔️ Gun Shop</h1>
     <nav>
@@ -15,6 +26,7 @@
       <a href="#">Contact</a>
       <a id="item-count">0</a>
       <a id="total-price">0</a>
+      <a id="menu-cart-btn"><i class="fas fa-shopping-cart"></i></a>
     </nav>
   </header>
 
@@ -49,91 +61,6 @@
   <footer>
     <p>&copy; 2025 Gun Store. All rights reserved.</p>
   </footer>
+  <script src="app.js"></script>
 </body>
-<style>
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background-color: #f2f2f2;
-  color: #333;
-}
-
-header {
-  background-color: #222;
-  color: white;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav a {
-  color: white;
-  margin-left: 1rem;
-  text-decoration: none;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.hero {
-  background-color: #444;
-  color: white;
-  padding: 3rem;
-  text-align: center;
-}
-
-.products {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.product-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 1rem;
-  width: 200px;
-  text-align: center;
-}
-
-.product-card img {
-  width: 100%;
-  border-radius: 6px;
-}
-
-button {
-  margin-top: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: #c0392b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #e74c3c;
-}
-
-footer {
-  background-color: #222;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
-</style>
-<script src="app.js"></script>
 </html>
-
