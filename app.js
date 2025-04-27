@@ -36,7 +36,7 @@ function fillArry() {
   for (let i = 0; i < cart.length; i++) {
     if (
       cart[i].productImage === items.productImage &&
-      cart[i].productName === items.productName &&
+      cart[i].productName === items.productName
     ) {
       found = true;
       cart[i].productQuantity += 1;
