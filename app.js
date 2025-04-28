@@ -4,13 +4,17 @@ let cart = [];
 
 let sidebarmenu = document.querySelectorAll(".side-bar-menu")[0];
 let items;
-
+function cartIconBtn(){
+  sidebarmenu.style.right = "0";
+  sidebarmenu.style.width = "100%";
+}
 function addToCart(price) {
   let currentProductPrice = Number(price.parentNode.querySelector("p").innerHTML.slice(1));
   itemCount++;
   totalPrice += currentProductPrice;
-  document.getElementById('item-count').innerText = itemCount;
+  document.getElementById('item-count').textContent = itemCount;
   document.getElementById('total-price').innerText = totalPrice;
+  console.log(document.getElementById('item-count').innerHTML);
   let currentProductNAme = price.parentNode.childNodes[3].innerHTML;
   let currentProductImg = price.parentNode.childNodes[1].src;
   items = {
@@ -21,8 +25,9 @@ function addToCart(price) {
   }
   fillArry()
   console.log(cart);
-  sidebarmenu.style.right = "0";
-  sidebarmenu.style.width = "100%";
+  cartIconBtn();
+  // sidebarmenu.style.right = "0";
+  // sidebarmenu.style.width = "100%";
 }
 
 function closebtn() {

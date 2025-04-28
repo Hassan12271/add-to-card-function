@@ -171,3 +171,6 @@ footer {
   border-radius: 100%;
   padding: 10px;
 }
+.cart-icon{
+  cursor: pointer;
+}
