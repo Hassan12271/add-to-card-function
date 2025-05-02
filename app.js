@@ -6,7 +6,7 @@ let sidebarmenu = document.querySelectorAll(".side-bar-menu")[0];
 let items;
 function cartIconBtn(){
   sidebarmenu.style.right = "0";
-  sidebarmenu.style.width = "100%";
+  sidebarmenu.style.width = "30%";
 }
 function addToCart(price) {
   let currentProductPrice = Number(price.parentNode.querySelector("p").innerHTML.slice(1));
@@ -25,8 +25,8 @@ function addToCart(price) {
   }
   fillArry()
   console.log(cart);
-  cartIconBtn();
   // sidebarmenu.style.right = "0";
+  cartIconBtn();
   // sidebarmenu.style.width = "100%";
 }
 
